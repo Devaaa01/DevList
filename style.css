@@ -213,3 +213,134 @@ ul#task-list {
     text-decoration: line-through;
     opacity: 0.6;
 }
+
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .logo h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    text-shadow: 3px 0 0 var(--hover-plus);
+  }
+
+  .todo {
+    max-width: 340px;
+    padding: 1.5rem;
+    gap: 15px;
+  }
+
+  .todo h1 {
+    font-size: 2rem;
+  }
+
+  .todo-input input {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .todo-input button {
+    padding: 6px;
+    margin-left: 12px;
+  }
+
+  .task-item {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+/* Untuk layar handphone kecil (<= 480px) */
+@media (max-width: 480px) {
+  .logo {
+    top: -30%;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem !important;
+    line-height: 1.5;
+  }
+
+  .todo {
+    width: 100%;
+    max-width: 300px;
+    padding: 1.2rem;
+    border-radius: 15px;
+  }
+
+  .todo h1 {
+    font-size: 1.6rem;
+  }
+
+  .todo-input {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .todo-input input {
+    width: 90%;
+    border-radius: 15px;
+    font-size: 13px;
+  }
+
+  .todo-input button {
+    margin-left: 0;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .task-actions {
+    align-self: flex-end;
+  }
+
+   .todo-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .todo-input input {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .todo-input button {
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Untuk layar sangat kecil (<= 360px) */
+@media (max-width: 360px) {
+  .logo h1 {
+    font-size: 1.6rem;
+  }
+
+  .todo h1 {
+    font-size: 1.4rem;
+  }
+
+  .todo-input input {
+    font-size: 12px;
+  }
+}
